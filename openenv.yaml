@@ -1,0 +1,9 @@
+version: "1.0.0"
+name: "git-conflict-resolver"
+description: "A real-world DevOps environment for training agents to resolve Git merge conflicts."
+entrypoint: "server:app"
+framework: "fastapi"
+tags:
+  - openenv
+  - devops
+  - automation
