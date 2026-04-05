@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+import uvicorn
 from models import Action
 from environment import GitConflictEnv
 
@@ -18,3 +19,11 @@ def step(action: Action):
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
+# THIS IS THE SECTION THE VALIDATOR IS ASKING FOR
+def main():
+    """Main entry point for the validator to call."""
+    uvicorn.run(app, host="0.0.0.0", port=7860)
+
+if __name__ == "__main__":
+    main()
