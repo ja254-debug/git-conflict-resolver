@@ -3,6 +3,7 @@ name: "git-conflict-resolver"
 description: "Git conflict resolution environment"
 entrypoint: "server:app"
 framework: "fastapi"
+mode: "docker"  # Add this line to satisfy the multi-mode requirement
 tags:
   - "automation"
   - "devops"
