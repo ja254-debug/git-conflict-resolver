@@ -20,10 +20,9 @@ def step(action: Action):
 def health():
     return {"status": "ok"}
 
-# THIS IS THE SECTION THE VALIDATOR IS ASKING FOR
 def main():
-    """Main entry point for the validator to call."""
-    uvicorn.run(app, host="0.0.0.0", port=7860)
+    import uvicorn
+    uvicorn.run("server.app:app", host="0.0.0.0", port=7860, reload=False)
 
 if __name__ == "__main__":
     main()
