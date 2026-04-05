@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "git-conflict-resolver"
 version = "1.0.0"
-description = "A DevOps environment for resolving Git merge conflicts."
+description = "Git conflict resolution environment"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -14,6 +14,9 @@ dependencies = [
     "pydantic",
     "openenv-core"
 ]
+
+[project.scripts]
+server = "server.app:app"
 
 [tool.setuptools.packages.find]
 where = ["."]
