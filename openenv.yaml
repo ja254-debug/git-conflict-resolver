@@ -1,9 +1,9 @@
 version: "1.0.0"
 name: "git-conflict-resolver"
 description: "Git conflict resolution environment"
-entrypoint: "server:app"
+entrypoint: "server.app:app"
 framework: "fastapi"
-mode: "docker"  # Add this line to satisfy the multi-mode requirement
+mode: "docker"
 tags:
   - "automation"
   - "devops"
